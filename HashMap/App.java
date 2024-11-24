@@ -2,11 +2,11 @@ package com.map.pacote;
 
 import java.util.HashMap;
 
-public class HashMap {
+public class App {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		HashMap<String, Integer> empIds = new HashMap<>();
+		App<String, Integer> empIds = new App<>();
 		
 		empIds.put("Eduardo", 12345);
 		empIds.put("Augusto", 67891);
