@@ -107,7 +107,7 @@ public class TesteConexao {
 > Curso Java Completo - Aula 143: JDBC pt 04 Inserindo dados no banco com Statement
 
 - O método getConexao não esta utilizando nenhum atributo de classe e a conexão é a mesma independente de quantas vezes você chamar esse objeto então por isso coloca com `static`;
-  -O comando `Inline Variable` no Eclipse é uma funcionalidade de refatoração que substitui todas as referências de uma variável no código pelo valor ou expressão atribuída a ela (Alt + Shift + I);
+- O comando `Inline Variable` no Eclipse é uma funcionalidade de refatoração que substitui todas as referências de uma variável no código pelo valor ou expressão atribuída a ela (Alt + Shift + I);
 
 ```
             Connection connection = DriverManager.getConnection(url, user, password);
@@ -117,10 +117,6 @@ public class TesteConexao {
 ```
 
 - Toda vez que abre uma conexão ela precisa ser fechada e tratada;
-
-```
-
-```
 
 - Criar um pacote DB e criar uma classe CompradorDB, depois precisa de uma conexão, criar um `Statement` é o objeto que irá trabalhar com os dados lá no banco é o que vai executar essa instrução de comando `INSERT INTO...`;
 - Quase todos os métodos lançam sql exception porque geralmente o banco de dados precisa passar pela rede para ser acessado e essa rede pode estar indisponível;
