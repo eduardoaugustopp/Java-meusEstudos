@@ -1,0 +1,5 @@
+# Exception
+
+- Se esta criando um `método privado` as chances é que você vai acabar usando `try catch` porque o método privado ninguém fora dessa classe, vai poder chamar esse método criar novo arquivo, então não faz sentido usar `throws IOException`; se estivesse criando como `método publico` nesse momento você não faz idéia de quem pode chamar, qualquer pessoa em qualquer parte do projeto pode chamar o método criando arquivo, nesse caso é interessante manter o `throws IOException`;
+- Existe a opção em fazer algo `híbrido` ou seja você captura a exceção e relança a exceção `Ex.:` imagina que estou criando esse novo arquivo ou um carrinho de compras e tem que efetuar um pagamento; quando tentar efetuar o pagamento ele pode falhar, quando falha você quer ver no console 'pagamento falhou' após falhar precisa aparecer para o cliente a opção de uma nova tentativa; então você quer capturar essa exceção, mostrar no console mas você ainda quer retornar para quem esta chamando o seu método;
+- `throws e;` - joga novamente;

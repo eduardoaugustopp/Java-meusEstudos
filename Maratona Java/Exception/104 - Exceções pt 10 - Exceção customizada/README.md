@@ -1,0 +1,3 @@
+# Exception
+
+Existe casos específicos aonde o Java não vai proporcionar exceções que voce quer, ai precisa fazer tratamento específico; ``EX.:`` login e senha de usuário; classe ``LoginInvalidoException`` ``extends`` ai define se quer estender do tipo `checked` ou `unchecked` é uma exceção que voce vai forçar a pessoa fazer um tratamento ou não vai forçar, nesse caso vai forçar então `extends Exception` só isso ja significa que tem voce tem sua própria exceção customizada;  
