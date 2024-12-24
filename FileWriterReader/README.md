@@ -16,7 +16,7 @@ File file = new File("Arquivo.txt");
 - Toda vez que você escreve em um arquivo, está trabalhando com um `buffer`. Isso significa que você utiliza um recurso do sistema operacional, pois o arquivo está localizado no HD, e o sistema operacional cria um `túnel` para que o Java possa gravar os dados no arquivo (por exemplo, um arquivo.txt). Nesse túnel, chamado de `stream`, você pode realizar várias operações de escrita. Porém, durante esse processo, pode acontecer de algumas informações permanecerem no buffer, sem serem efetivamente gravadas no arquivo. Para garantir que todos os dados sejam transferidos do buffer para o arquivo, é necessário utilizar o `método flush`. Ele força a saída de todos os dados que estão no buffer para o arquivo. Após isso, o método `close` deve ser chamado para liberar o recurso e encerrar a conexão com o arquivo.
 - Esse exemplo a seguir, toda vez que eu alterar a mensagem e roda vai sobrescrever:
 
-````
+````java
 		File file = new File("Arquivo.txt");
 		try {
 			FileWriter fw = new FileWriter(file);
@@ -33,20 +33,13 @@ File file = new File("Arquivo.txt");
 ````
 - O `método append` permite incluir novos dados ao final do arquivo em vez de sobrescrever seu conteúdo. Para isso, é necessário configurá-lo no construtor do objeto usado para manipular o arquivo. Quando ativado, ele adiciona os dados ao final do arquivo existente, preservando o conteúdo já salvo. **, true**
 
-````
+````java
 FileWriter fw = new FileWriter(file, true);
 ````
 
 - `fr.read` ele vai retornar um int e vai colocar dentro de um array; cria um array char;
 
-````
-package FileWriterReaderTest;
-
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-
+````java
 public class FileWriterReaderTest {
 
 	public static void main(String[] args) {

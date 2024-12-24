@@ -6,7 +6,7 @@
 
 - Para criar o arqivo preciso chamar `file.createNewFile` esse é um método que vai retornar um valor booleano dizendo se aquele arquivo foi criado ou não, ele só será criado se ele não existir e que também precisa de um tratamento de exceção (Ctrl + 1 -> Surround Try/Catch) depois (Ctrl + 1 -> new local variable);
 
-````
+````java
 File file = new File("Arquivo.txt");
         try {
             // Cria o arquivo e verifica se foi criado
