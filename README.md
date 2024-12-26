@@ -33,10 +33,10 @@ O objetivo deste repositório é registrar meu progresso de aprendizado.
   ✅ Interfaces</br>
   ✅ Polimorfismo</br>
 
-## Avançado
+## Avançando
 
 ✅ Exceções</br>
-❌ Classes Utilitárias</br>
+✅ Classes Utilitárias</br>
 ❌ Coleções</br>
 ❌ Generics</br>
 ❌ Classes Internas</br>
