@@ -37,11 +37,11 @@ O objetivo deste repositório é registrar meu progresso de aprendizado.
 
 ✅ Exceções</br>
 ✅ Classes Utilitárias</br>
-❌ Coleções</br>
-❌ Generics</br>
-❌ Classes Internas</br>
-❌ Parametrizando Comportamentos</br>
-❌ Lambdas</br>
+✅ Coleções</br>
+✅ Generics</br>
+✅ Classes Internas</br>
+✅ Parametrizando Comportamentos</br>
+✅ Lambdas</br>
 ❌ Method Reference</br>
 ❌ Optional</br>
 ❌ Streams</br>
